@@ -57,18 +57,34 @@ function searchbtn() {
 
 function infoo(id){
              console.log(document.getElementById("food").innerText);
+            document.getElementById("f").style.display = "none"
             document.getElementById("card2").style.display = "none"
-            document.getElementById("card2").style.display = "grid"
             console.log(id);
+            
             fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
             .then(response => response.json())
             .then(data=>{
                 const alldata=data.meals[0];
+                const name = data.meals[0].strMeal;
+                const image=data.meals[0].strMealThumb;
+                const foodname = document.getElementById('card3');
+            const fooddiv = document.createElement('div');
+            const info = `
+            <div class="carrd">
+            <img src=${image} alt="Avatar" style="width:100%">
+            <div class="container con">
+            <h1><b>${name}</b></h1>
+            </div>
+            </div>
+            `
+            fooddiv.innerHTML = info;
+            foodname.appendChild(fooddiv);
                 for (let index = 0; index < 20; index++) {
                     const line="strIngredient"+index;
                     for (let x in alldata) {
                         if(x==line && !alldata[x]=="")
                         console.log(x + ": "+ alldata[x])
+                        
                      }
                  }
             })

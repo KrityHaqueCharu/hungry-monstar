@@ -112,8 +112,27 @@ body{
   form > .button:hover {
     background-color:black;
   }
-  .card img{
+  .card img,.carrd img{
     border-radius: 10px 10px 0px 0px;
   }
   
+  .carrd {
     
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 500px;
+    margin-left: 33%;
+    margin-top:150px;
+    background-color: #FFF;
+  }
+  
+  
+  .carrd:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container{
+    background-color: #FFF;
+  }
+  .con{
+    height: 300px;
+  }
