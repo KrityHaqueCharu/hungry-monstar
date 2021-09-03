@@ -30,7 +30,13 @@ function searchbtn() {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealsrch}`)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+
+            if(data.meals==null){
+                console.log("nai kisu")
+                document.getElementById("cards").innerText="No Item Found";
+            }
+            else{
+                console.log(data.meals);
             document.getElementById("cards").style.display = "none"
             document.getElementById("card2").style.display = "grid"
             for (let index = 0; index < data.meals.length; index++) {
@@ -52,7 +58,8 @@ function searchbtn() {
 
 
             }
-        })
+        }
+            })
 }
 
 function infoo(id){

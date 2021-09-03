@@ -26,14 +26,14 @@ body{
         grid-gap:20px;
         padding: 5%;
         margin-top: 150px;
-        border: 2px dashed black;
+       
   }
   #card2{
     grid-template-columns:repeat(5,1fr);
     grid-gap:20px;
     padding: 5%;
     margin-top: 150px;
-    border: 2px dashed black;
+    
     display:none;
 }
 
