@@ -58,7 +58,7 @@ body{
     transition:0.4s;
   }
   
-  form {
+  .form {
     outline: 0;
     float: left;
     margin-top:70px ;
@@ -69,7 +69,7 @@ body{
     border-radius: 4px;
   }
   
-  form > .textbox {
+  .form > .textbox {
     outline: 0;
     height: 42px;
     width: 400px;
@@ -83,12 +83,12 @@ body{
     border-radius: 4px 0 0 4px;
   }
   
-  form > .textbox:focus {
+  .form > .textbox:focus {
     outline: 0;
     background-color: #FFF;
   }
   
-  form > .button {
+  .form > .button {
     outline: 0;
     background: none;
     background-color: rgba(38, 50, 56, 0.8);
@@ -109,7 +109,7 @@ body{
     border-radius: 0 4px 4px 0;
   }
   
-  form > .button:hover {
+  .form > .button:hover {
     background-color:black;
   }
   .card img,.carrd img{
