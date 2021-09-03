@@ -1,5 +1,6 @@
 body{
   background-color: rgb(255, 208, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -26,6 +27,7 @@ body{
         grid-gap:20px;
         padding: 5%;
         margin-top: 150px;
+       
        
   }
   #card2{
@@ -112,7 +114,7 @@ body{
   .form > .button:hover {
     background-color:black;
   }
-  .card img,.carrd img{
+  .card img{
     border-radius: 10px 10px 0px 0px;
   }
   
@@ -120,8 +122,8 @@ body{
     
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 500px;
-    margin-left: 33%;
+    width: 400px;
+    margin-left: 36%;
     margin-top:150px;
     background-color: #FFF;
   }
@@ -135,4 +137,7 @@ body{
   }
   .con{
     height: 300px;
+  }
+  #text{
+    margin-left: 25px;
   }
